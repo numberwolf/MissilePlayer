@@ -175,19 +175,11 @@ pts log</textarea>
             console.log(play_url);
 
             /*
-             *
-             *
              * 1. create player object
-             *
-             *
              */
             playerObj = window.new265webjs(play_url, config);
             /*
-             *
-             *
              * 2. bind events
-             *
-             *
              */
             playerObj.onSeekStart = (pts) => {
                 loggerObj.scrollNewest("\r\nonSeekStart:" + pts);
@@ -288,11 +280,7 @@ pts log</textarea>
             };
 
             /*
-             *
-             *
              * 3. install player
-             *
-             *
              */
             playerObj.do();
         } // end func installPlayer

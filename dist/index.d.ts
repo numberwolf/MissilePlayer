@@ -6,6 +6,7 @@ export interface Web265JsExtraConfig {
   coreProbePart?: number
   ignoreAudio?: 0 | 1
   probeSize?: number
+  autoPlay?: boolean
 }
 
 export interface Web265JsConfig {
@@ -66,6 +67,7 @@ interface New265WebJs {
   onCloseFullScreen(): void
   do(): void
   pause(): void
+  play(): void
   isPlaying(): boolean
   setRenderScreen(state: boolean): void
   seek(pts: number): void
